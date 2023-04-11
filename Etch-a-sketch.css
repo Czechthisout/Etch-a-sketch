@@ -1,0 +1,44 @@
+.dynamicButton{
+    display: flex;
+    margin: 10px;
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.buttonText{
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+    transition: transform 250ms;
+}
+
+.dynamicButton:active .buttonText {
+    transform: translateY(-2px);
+}
+
+#colorPallet{
+    appearance:none;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#classicMode{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* .dynamicButton:hover .buttonText {
+    transform: translateY(-6px);
+} */

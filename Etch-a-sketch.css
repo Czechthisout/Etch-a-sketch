@@ -1,3 +1,9 @@
+#grit{
+    display: grid;
+    border-color: #000000;
+    border-style: solid;
+}
+
 .dynamicButton{
     display: flex;
     margin: 10px;
@@ -24,21 +30,30 @@
     transform: translateY(-2px);
 }
 
-#colorPallet{
-    appearance:none;
-    height: 30px;
+#colorPallet {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: transparent;
+    width: 60px;
+    height: 60px;
     border: none;
     cursor: pointer;
 }
+
+#colorPallet::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+#colorPallet::-moz-color-swatch {
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+  
 
 #classicMode{
     display: flex;
     flex-direction: row;
 }
 
-
-
-/* .dynamicButton:hover .buttonText {
-    transform: translateY(-6px);
-} */

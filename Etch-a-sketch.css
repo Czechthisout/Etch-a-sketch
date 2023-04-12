@@ -31,9 +31,10 @@
     border:1px solid black;
 }
 
-.grid-cell:hover{
+/* .grid-cell:hover{
     background-color:red;
-}
+    z-index: 99;
+} */
 
 img{
     width: 100%;

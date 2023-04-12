@@ -1,4 +1,3 @@
-createGrid(slider.value);
 
 document.addEventListener('DOMContentLoaded', () => {
     const colorPallet = document.getElementById("colorPallet");
@@ -24,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
         createGrid(value);
         
       })
+      createGrid(slider.value);
+
     } else {
       console.log('slider not found');
     }
@@ -32,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function createGrid(size) {
     var grid=document.getElementById('grid');
-
     // Remove all child elements from the grid to start fresh
     while (grid.firstChild){
       grid.removeChild(grid.firstChild);
@@ -40,14 +40,26 @@ function createGrid(size) {
     // Set the new grid styles based on the size value
     grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+   
+    let mouseActive = false;
+    grid.addEventListener('mousedown', ()=>{
+      mouseActive = true;
+    })
 
+    grid.addEventListener('mouseup', ()=>{
+      mouseActive = false;
+    })
       
-    // Create grid cells and append them to the grid
     for(var i=0;i<size*size;i++){
       const cell = document.createElement("div");
-      grid.appendChild(cell)
       cell.classList.add("grid-cell");
-    }  
+      cell.addEventListener('mousemove', (event)=>{
+        if (mouseActive){
+          console.log('filling cell w/ black and white');
+          event.target.style.backgroundColor = "black"}});
+      
+      grid.appendChild(cell);   
+  }
 }
 
 tippy('#clearButton', {

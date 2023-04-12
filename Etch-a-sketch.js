@@ -50,5 +50,35 @@ function createGrid(size) {
     }  
 }
 
+tippy('#clearButton', {
+  content: 'Press to clear your work',
+  placement: 'right-end'
+});
+
+tippy('#colorPallet', {
+  content: 'Sketch with a custom color',
+  placement: 'right-end'
+});
+
+tippy('#BWButton', {
+  content: 'Sketch like you did as a child - in black and white',
+  placement: 'right-end'
+});
+
+tippy('#rainbowButton', {
+  content: 'Sketch all the colors of the rainbow',
+  placement: 'right-end'
+});
+
+tippy('#eraserButton', {
+  content: 'Press to erase with precision',
+  placement: 'right-end'
+});
+
+tippy('#slider', {
+  content: 'Change the grid dimensions. This will clear your work',
+  placement: 'right-end'
+});
+
 create
   

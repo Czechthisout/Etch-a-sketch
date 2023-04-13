@@ -17,8 +17,8 @@
 
 - Do more with the dynamic buttons. I just lifted the basic buttons from Josh Comeau, but there's plenty more animation work that could be done (e.g. make them springy)
 - [The Odin Project curriculum](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) for this project had two features for extra credit: 
- - :heavy_check_mark: ~~Instead of just changing the color of a square from black to white (for example), have each pass through with the mouse change it to a completely random RGB value.~~ 
- - Then try having each pass just add another 10% of black to it so that only after 10 passes is the square completely black.
+    - :heavy_check_mark: ~~Instead of just changing the color of a square from black to white (for example), have each pass through with the mouse change it to a completely random RGB value.~~
+    - Then try having each pass just add another 10% of black to it so that only after 10 passes is the square completely black.
 
 ## Special thank to...
 - [Joe Bob Graphics](https://www.joebobgraphics.com/fonts/etch-a-sketch/) for excellent etch-a-sketch fonts.
